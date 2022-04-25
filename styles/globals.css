@@ -1,16 +1,58 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#page1{
+  background-color: #1C1E53;
+  height: 760px;
+  font-family: 'Inter', sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+#page2{
+  background-color: #F4F6FC;
+  font-family: 'Inter', sans-serif;
 }
 
-* {
-  box-sizing: border-box;
+#page3{
+  background-color: #F4F6FC;
+  font-family: 'Inter', sans-serif;
+}
+
+#page4{
+  background-color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+}
+
+#page5{
+  background-color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+}
+
+#footer{
+  background-color: #1C1E53;
+  font-family: 'Inter', sans-serif;
+}
+
+#Navbar{
+  padding-top: 30px;
+  font-family: 'Inter', sans-serif;
+  color: #d2d2dd;
+}
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size .5s ease-in-out;
+}
+
+.link-underline-black {
+  background-image: linear-gradient(transparent, transparent), linear-gradient(rgb(254, 254, 254), rgb(199, 215, 245))
+}
+
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%
 }
